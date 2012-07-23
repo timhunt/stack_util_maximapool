@@ -10,6 +10,11 @@
 	<war destfile="MaximaPool.war" webxml="misc/web.xml" manifest="misc/MANIFEST.MF">
 		<classes dir="build"/>
 	</war>
+	<jar destfile="TestMaximaPool.jar" basedir="build">
+		<manifest>
+			<attribute name="Main-Class" value="fi.aalto.maximapool.StartupTest"/>
+		</manifest>
+	</jar>
 	<delete dir="build"/>
   </target>
 </project>
